@@ -1,3 +1,5 @@
+#created by wpcheng 
+#Sept. 14th, 2017
 import json
 
 class SemanticEntity(object):
@@ -7,7 +9,7 @@ class SemanticEntity(object):
 	expectText = ""
 	expectJson = ""
 	
-	def __init__(self, actualText, actualJson, isLocalResult):
+	def __init__(self, actualText="", actualJson="", isLocalResult=-1):
 		self.actualText = actualText
 		self.actualJson = actualJson
 		self.isLocalResult = isLocalResult

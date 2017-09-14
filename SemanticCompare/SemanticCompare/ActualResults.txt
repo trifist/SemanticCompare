@@ -1,12 +1,4 @@
 Label_SpeechStart:
-关闭收音机	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"1555","operation":"EXIT","pk_score":1,"rc":0,"semantic":{"slots":{"name":"收音机"}},"service":"app","text":"关闭收音机","version":"3.0.0.1220"}
-Label_SpeechResult:
 Label_SpeechStart:
-听几首音乐	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"1071","operation":"PLAY","pk_score":1,"rc":0,"service":"music","text":"听几首音乐","version":"3.0.0.1220"}
-Label_SpeechResult:
 Label_SpeechStart:
-调频一百零四点三	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"1523","operation":"LAUNCH","pk_score":1,"rc":0,"semantic":{"slots":{"code":"104.3","waveband":"fm"}},"service":"radio","text":"调频一百零四点三","version":"3.0.0.1220"}
-Label_SpeechResult:
 Label_SpeechStart:
-我想听fm一百零四点三。	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"LAUNCH","pk_score":1,"rc":0,"semantic":{"slots":{"code":"104.3","waveband":"fm"}},"service":"radio","text":"我想听fm一百零四点三。","version":"3.0.0.1220"}
-Label_SpeechResult:
