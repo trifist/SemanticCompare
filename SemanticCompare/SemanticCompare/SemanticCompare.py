@@ -7,25 +7,31 @@ entities = []
 def main():
 	#read actual results
 	actualResultFile = open("./ActualResults.txt", "r")
-	line = "a"
-	while(line != ""):
-		line = actualResultFile.readline()
-		if(line == "Label_SpeechStart:\n"):
+	actualResult = actualResultFile.readlines()
+	actualResultFile.close()
+
+	i = 0;
+	while(i < len(actualResult)):
+		if(actualResult[i] == "Label_SpeechStart:\n"):
 			entity = SemanticEntity()
-			position = actualResultFile.tell()
-			line = actualResultFile.readline()
+
+			if(i+1<len(actualResult)):
+				line = actualResult[i+1]
+			else:
+				break
+
 			if(not line.startswith("Label")):
 				param = line.split("\t")
 				entity.actualText = param[0]
 				entity.actualJson = param[2]
 				entity.isLocalResult = param[1]
-			else:
-				actualResultFile.seek(position, 0)
+
 			entities.append(entity)
+		i=i+1
 
 	print(entities[0].actualText)
-	print("\n")
 	print(entities[0].actualJson)
+	print(len(entities))
 
 if __name__ == "__main__":
 	main()
