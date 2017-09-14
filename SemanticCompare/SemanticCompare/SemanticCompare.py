@@ -3,8 +3,10 @@
 from SemanticEntity import *
 
 entities = []
+correctEntities = []
+errorEntities = []
 
-def main():
+def readActualResult():
 	#read actual results
 	actualResultFile = open("./ActualResults.txt", "r")
 	actualResult = actualResultFile.readlines()
@@ -25,13 +27,47 @@ def main():
 				entity.actualText = param[0]
 				entity.actualJson = param[2]
 				entity.isLocalResult = param[1]
-
-			entities.append(entity)
+				entities.append(entity)
+			elif(line == "Label_SpeechError:\n"):
+				entities.append(entity)
 		i=i+1
+	return
 
-	print(entities[0].actualText)
-	print(entities[0].actualJson)
-	print(len(entities))
+def readExpectText():
+	file = open("./ExpectText.txt", "r")
+	results = file.readlines()
+	file.close()
+	if(len(entities) != len(results)):
+		print("ExpectText Error, not match!")
+		return
+	for i in range(0, len(entities)):
+		entities[i].expectText = results[i]
+	return
+
+def readExpectJson():
+	file = open("./ExpectJson.txt", "r")
+	results = file.readlines()
+	file.close()
+	if(len(entities) != len(results)):
+		print("ExpectJson Error, not match!")
+		return
+	for i in range(0, len(entities)):
+		entities[i].expectJson = results[i]
+	return
+
+def main():
+	readActualResult()
+	readExpectText()
+	readExpectJson()
+
+	for entity in entities:
+		if(entity.compare()):
+			correctEntities.append(entity)
+		else:
+			errorEntities.append(entity)
+
+	print("correct count = %s" % len(correctEntities))
+	print("error count = %s" % len(errorEntities))
 
 if __name__ == "__main__":
 	main()
