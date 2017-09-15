@@ -1,0 +1,5 @@
+{}
+{"operation":"","semantic":{"slots":{"datetime":{"date":"2017-09-13","dateOrig":"今天","type":"DT_BASIC"}}},"service":"news"}
+{"operation":"QUERY","pk_score":1,"rc":0,"semantic":{"slots":{"category":"西餐厅","location":{"city":"CURRENT_CITY","poi":"CURRENT_POI","type":"LOC_POI"}}},"service":"restaurant","text":"附近的西餐厅。","version":"3.0.0.1220"}
+{"operation":"EXIT","pk_score":0.4666666388511658,"rc":0,"semantic":{"slots":{"name":"左侧车窗"}},"service":"app","text":"关闭左侧车窗。","version":"3.0.0.1220"}
+{"operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"location":{"city":"CURRENT_CITY","ori_loc":"医院","poi":"CURRENT_POI","type":"LOC_POI"},"name":"医院"}},"service":"lbs","text":"我要去看病。","version":"3.0.0.1220"}
