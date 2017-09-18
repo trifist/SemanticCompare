@@ -1,18 +1,18 @@
 Label_SpeechStart:
-ËùÇ°×ùÒÎ¼ÓÈÈ¡£	1	{"bislocalresult":"1","nlocalconfidencescore":"0","rc":4,"text":"ËùÇ°×ùÒÎ¼ÓÈÈ¡£"}
+æ‰€å‰åº§æ¤…åŠ çƒ­ã€‚	1	{"bislocalresult":"1","nlocalconfidencescore":"0","rc":4,"text":"æ‰€å‰åº§æ¤…åŠ çƒ­ã€‚"}
 Label_SpeechResult:
 Label_SpeechStart:
-½ñÌìÓĞÊ²Ã´ĞÂÎÅ¡£	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"datetime":{"date":"2017-09-13","dateOrig":"½ñÌì","type":"DT_BASIC"}}},"service":"news","text":"½ñÌìÓĞÊ²Ã´ĞÂÎÅ¡£","version":"3.0.0.1220"}
+ä»Šå¤©æœ‰ä»€ä¹ˆæ–°é—»ã€‚	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"datetime":{"date":"2017-09-13","dateOrig":"ä»Šå¤©","type":"DT_BASIC"}}},"service":"news","text":"ä»Šå¤©æœ‰ä»€ä¹ˆæ–°é—»ã€‚","version":"3.0.0.1220"}
 Label_SpeechResult:
 Label_SpeechStart:
-¸½½üµÄÎ÷²ÍÌü¡£	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"QUERY","pk_score":1,"rc":0,"semantic":{"slots":{"category":"Î÷²ÍÌü","location":{"city":"CURRENT_CITY","poi":"CURRENT_POI","type":"LOC_POI"}}},"service":"restaurant","text":"¸½½üµÄÎ÷²ÍÌü¡£","version":"3.0.0.1220"}
+é™„è¿‘çš„è¥¿é¤å…ã€‚	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"QUERY","pk_score":1,"rc":0,"semantic":{"slots":{"category":"è¥¿é¤å…","location":{"city":"CURRENT_CITY","poi":"CURRENT_POI","type":"LOC_POI"}}},"service":"restaurant","text":"é™„è¿‘çš„è¥¿é¤å…ã€‚","version":"3.0.0.1220"}
 Label_SpeechResult:
 Label_SpeechStart:
 Label_SpeechStart:
-¹Ø±Õ×ó²à³µ´°¡£	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"EXIT","pk_score":0.4666666388511658,"rc":0,"semantic":{"slots":{"name":"×ó²à³µ´°"}},"service":"app","text":"¹Ø±Õ×ó²à³µ´°¡£","version":"3.0.0.1220"}
+å…³é—­å·¦ä¾§è½¦çª—ã€‚	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"EXIT","pk_score":0.4666666388511658,"rc":0,"semantic":{"slots":{"name":"å·¦ä¾§è½¦çª—"}},"service":"app","text":"å…³é—­å·¦ä¾§è½¦çª—ã€‚","version":"3.0.0.1220"}
 Label_SpeechResult:
 Label_SpeechStart:
-ÎÒÒªÈ¥¿´²¡¡£	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"location":{"city":"CURRENT_CITY","ori_loc":"Ò½Ôº","poi":"CURRENT_POI","type":"LOC_POI"},"name":"Ò½Ôº"}},"service":"lbs","text":"ÎÒÒªÈ¥¿´²¡¡£","version":"3.0.0.1220"}
+æˆ‘è¦å»çœ‹ç—…ã€‚	1	{"bislocalresult":"1","language":"zh_cn_mandarin","nlocalconfidencescore":"0","operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"location":{"city":"CURRENT_CITY","ori_loc":"åŒ»é™¢","poi":"CURRENT_POI","type":"LOC_POI"},"name":"åŒ»é™¢"}},"service":"lbs","text":"æˆ‘è¦å»çœ‹ç—…ã€‚","version":"3.0.0.1220"}
 Label_SpeechResult:
 Label_SpeechStart:
 Label_SpeechStart:

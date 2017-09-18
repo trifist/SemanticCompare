@@ -1,5 +1,5 @@
 {}
-{"operation":"","semantic":{"slots":{"datetime":{"date":"2017-09-13","dateOrig":"½ñÌì","type":"DT_BASIC"}}},"service":"news"}
-{"operation":"QUERY","pk_score":1,"rc":0,"semantic":{"slots":{"category":"Î÷²ÍÌü","location":{"city":"CURRENT_CITY","poi":"CURRENT_POI","type":"LOC_POI"}}},"service":"restaurant","text":"¸½½üµÄÎ÷²ÍÌü¡£","version":"3.0.0.1220"}
-{"operation":"EXIT","pk_score":0.4666666388511658,"rc":0,"semantic":{"slots":{"name":"×ó²à³µ´°"}},"service":"app","text":"¹Ø±Õ×ó²à³µ´°¡£","version":"3.0.0.1220"}
-{"operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"location":{"city":"CURRENT_CITY","ori_loc":"Ò½Ôº","poi":"CURRENT_POI","type":"LOC_POI"},"name":"Ò½Ôº"}},"service":"lbs","text":"ÎÒÒªÈ¥¿´²¡¡£","version":"3.0.0.1220"}
+{"operation":"","semantic":{"slots":{"datetime":{"date":"2017-09-13","dateOrig":"ä»Šå¤©","type":"DT_BASIC"}}},"service":"news"}
+{"operation":"QUERY","pk_score":1,"rc":0,"semantic":{"slots":{"category":"è¥¿é¤å…","location":{"city":"CURRENT_CITY","poi":"CURRENT_POI","type":"LOC_POI"}}},"service":"restaurant","text":"é™„è¿‘çš„è¥¿é¤å…ã€‚","version":"3.0.0.1220"}
+{"operation":"EXIT","pk_score":0.4666666388511658,"rc":0,"semantic":{"slots":{"name":"å·¦ä¾§è½¦çª—"}},"service":"app","text":"å…³é—­å·¦ä¾§è½¦çª—ã€‚","version":"3.0.0.1220"}
+{"operation":"","pk_score":1,"rc":0,"semantic":{"slots":{"location":{"city":"CURRENT_CITY","ori_loc":"åŒ»é™¢","poi":"CURRENT_POI","type":"LOC_POI"},"name":"åŒ»é™¢"}},"service":"lbs","text":"æˆ‘è¦å»çœ‹ç—…ã€‚","version":"3.0.0.1220"}
