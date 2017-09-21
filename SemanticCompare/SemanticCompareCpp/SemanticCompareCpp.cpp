@@ -1,5 +1,5 @@
-// SemanticCompareCpp.cpp: 定义控制台应用程序的入口点。
-//
+#pragma comment(lib, "../libissvw/Ivw/IvwWinCE.lib")
+#pragma comment(lib, "../libissmvw/AEC/WinCE/AEC.lib")
 
 #include "stdafx.h"
 
