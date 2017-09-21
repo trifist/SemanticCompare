@@ -1,0 +1,79 @@
+Label_Start:-----------------------------------------------------------
+Is Local: 1
+Expect Text: 所前椅加热
+Actual Text: 所前座椅加热
+Expect Semantic:
+{}
+Actual Semantic:
+{"bislocalresult":"1","nlocalconfidencescore":"0","rc":4,"text":"所前座椅加热。"}
+
+Label_End--------------------------------------------------------------
+
+
+
+Label_Start:-----------------------------------------------------------
+Is Local: 1
+Expect Text: 附近的西餐厅
+Actual Text: 附近的西餐厅
+Expect Semantic:
+{
+  "operation": "QUERY",
+  "semantic": {
+    "slots": {
+      "category": "西厅",
+      "location": {
+        "city": "CURRENT_CITY",
+        "poi": "CURRENT_POI",
+        "type": "LOC_POI"
+      }
+    }
+  },
+  "service": "restaurant"
+}
+Actual Semantic:
+{
+  "operation": "QUERY",
+  "semantic": {
+    "slots": {
+      "category": "西餐厅",
+      "location": {
+        "city": "CURRENT_CITY",
+        "poi": "CURRENT_POI",
+        "type": "LOC_POI"
+      }
+    }
+  },
+  "service": "restaurant"
+}
+Label_End--------------------------------------------------------------
+
+
+
+Label_Start:-----------------------------------------------------------
+Is Local: 1
+Expect Text: 关闭侧车窗
+Actual Text: 关闭左侧车窗
+Expect Semantic:
+{
+  "operation": "EXIT",
+  "semantic": {
+    "slots": {
+      "name": "左侧车窗"
+    }
+  },
+  "service": "app"
+}
+Actual Semantic:
+{
+  "operation": "EXIT",
+  "semantic": {
+    "slots": {
+      "name": "左侧车窗"
+    }
+  },
+  "service": "app"
+}
+Label_End--------------------------------------------------------------
+
+
+

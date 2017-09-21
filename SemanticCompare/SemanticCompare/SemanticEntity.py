@@ -1,5 +1,6 @@
-#created by wpcheng
-#Sept.  14th, 2017
+# coding: utf-8 
+# created by wpcheng
+# Sept.  14th, 2017
 import json
 import re
 
@@ -17,11 +18,8 @@ class SemanticEntity(object):
         return
 
     def compare(self):
-        if(self.compareText() and self.compareSemantic()):
-            return True
-        else:
-            return False
-
+        return (self.compareSemantic(), self.compareText())
+       
     def compareText(self):
         self.actualText.strip()
         self.expectText.strip()
@@ -39,6 +37,9 @@ class SemanticEntity(object):
         for key in expect.keys():
             if(key in rawActual):
                 actual[key] = rawActual[key]
-            else:
-                return False
+
+        if (actual.keys()):
+            self.actualJson = json.dumps(actual, ensure_ascii=False, indent=2)
+
+        self.expectJson = json.dumps(expect, ensure_ascii=False, indent=2)
         return actual == expect

@@ -1,5 +1,6 @@
-#created by wpcheng 
-#Sept. 14th, 2017
+# coding: utf-8 
+# created by wpcheng 
+# Sept. 14th, 2017
 from SemanticEntity import *
 
 entities = []
@@ -8,7 +9,7 @@ errorEntities = []
 
 def readActualResult():
     #read actual results
-    actualResultFile = open("./ActualResults.txt", "r")
+    actualResultFile = open("./ActualResults.txt", "r", encoding="utf8")
     actualResult = actualResultFile.readlines()
     actualResultFile.close()
 
@@ -34,7 +35,7 @@ def readActualResult():
     return
 
 def readExpectText():
-    file = open("./ExpectText.txt", "r")
+    file = open("./ExpectText.txt", "r", encoding="utf8")
     results = file.readlines()
     file.close()
     if(len(entities) != len(results)):
@@ -45,7 +46,7 @@ def readExpectText():
     return
 
 def readExpectJson():
-    file = open("./ExpectJson.txt", "r")
+    file = open("./ExpectJson.txt", "r", encoding="utf8")
     results = file.readlines()
     file.close()
     if(len(entities) != len(results)):
@@ -55,19 +56,47 @@ def readExpectJson():
         entities[i].expectJson = results[i]
     return
 
+def writeResults():
+    file = open("./ErrorResults.txt", "w", encoding="utf8")
+    for entity in errorEntities:
+        file.write("Label_Start:-----------------------------------------------------------\n")
+        file.write("Is Local: ")
+        file.write(entity.isLocalResult)
+        file.write("\n")
+        file.write("Expect Text: ")
+        file.write(entity.expectText)
+        file.write("\n")
+        file.write("Actual Text: ")
+        file.write(entity.actualText)
+        file.write("\n")
+        file.write("Expect Semantic:\n")
+        file.write(entity.expectJson)
+        file.write("\n")
+        file.write("Actual Semantic:\n")
+        file.write(entity.actualJson)
+        file.write("\n")
+        file.write("Label_End--------------------------------------------------------------\n")
+        file.write("\n\n\n")
+    file.close()
+    
+
 def main():
     readActualResult()
     readExpectText()
     readExpectJson()
 
     for entity in entities:
-        if(entity.compare()):
+        result = entity.compare()
+        if(result[0] and result[1]):
             correctEntities.append(entity)
         else:
             errorEntities.append(entity)
 
     print("correct count = %s" % len(correctEntities))
     print("error count = %s" % len(errorEntities))
+
+    writeResults()
+    input("Done! press Enter to exit")
 
 if __name__ == "__main__":
     main()
