@@ -1,0 +1,56 @@
+{
+	"type": "poi",
+	"nliFieldSearch": ["semantic.slots.poiName", "semantic.slots.poiName2"],
+	"list": [
+		{
+			"id": 10,
+			"dimension": [
+				{
+					"val": "天鹅湖大酒店",
+					"field": "poiName",
+					"spword": true
+				},
+				{
+					"val": "翡翠路与芙蓉路交口港澳广场沃尔玛4楼",
+					"field": "poiAddr",
+					"spword": true
+				},
+				{
+					"val": "",
+					"field": "cost",
+					"spword": false
+				},
+				{
+					"val": "",
+					"field": "distance",
+					"spword": false
+				}
+			]
+		},
+		{
+			"id": 20,
+			"dimension": [
+				{
+					"val": "天鹅湖蜀留香自助火锅",
+					"field": "poiName",
+					"spword": true
+				},
+				{
+					"val": "长江西路248号旺城大厦3楼A区",
+					"field": "poiAddr",
+					"spword": true
+				},
+				{
+					"val": "59元",
+					"field": "cost",
+					"spword": false
+				},
+				{
+					"val": "10.9kM",
+					"field": "distance",
+					"spword": false
+				}
+			]
+		}
+	]
+}

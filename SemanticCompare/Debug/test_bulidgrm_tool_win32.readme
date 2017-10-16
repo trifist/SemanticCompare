@@ -1,0 +1,7 @@
+bnf语法编译工具，支持三语。
+
+以中文为例：
+1. 将bnf文件布置到SRRes/ResMandarin/bnfs_Mandarin（英文bnfs_English、粤语bnfs_Cantonese）目录下，该目录路径中不可有中文
+2. test_bulidgrm_tool_win32.exe <SRRes>  注：识别资源目录为绝对目录
+3. 有错误根据控制台日志自行排除
+4. 无误后会在SRRes/ResMandarin目录下重新生成GrmBak、GrmSR、GrmBuild三个目录，将GrmSR和GrmBuild剪切至Active/SRRes/ResMandarin目录下替换原先目录。

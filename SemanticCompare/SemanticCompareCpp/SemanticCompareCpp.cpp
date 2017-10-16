@@ -1,9 +1,11 @@
 #include "stdafx.h"
-
+#include "SpeechRecognizer.h"
 
 int main()
 {
-    printf("hello");
+    SpeechRecognizer* pSr = new SpeechRecognizer;
+    pSr->init();
+    pSr->showInfo();
     getchar();
 }
 
