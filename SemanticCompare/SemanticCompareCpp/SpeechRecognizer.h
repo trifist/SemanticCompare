@@ -6,8 +6,8 @@
 class SpeechRecognizer
 {
 private:
-    std::string szResourceDir = "./resource/SRRes/";
-    HISSSR * pHISSSRObj = NULL;
+    std::string szResourceDir = "D:\\repository_git\\SemanticCompare\\SemanticCompare\\SemanticCompareCpp\\resource\\SRRes";
+    HISSSR srHandle = NULL;
 
 public:
     SpeechRecognizer();

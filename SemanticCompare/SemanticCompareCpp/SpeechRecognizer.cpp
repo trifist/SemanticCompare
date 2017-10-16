@@ -20,12 +20,12 @@ SpeechRecognizer::~SpeechRecognizer()
 void SpeechRecognizer::init()
 {
     cout << "Start initiation..." << endl;
-    ISSErrID errId = ISSSRCreateEx(pHISSSRObj, ISS_SR_ACOUS_LANG_VALUE_MANDARIN, szResourceDir.c_str(), &onMsgProc, NULL);
+    ISSErrID errId = ISSSRCreateEx(&srHandle, ISS_SR_ACOUS_LANG_VALUE_MANDARIN, szResourceDir.c_str(), &onMsgProc, NULL);
     cout << "create sr, error id = " << errId << endl;
 }
 
 void SpeechRecognizer::showInfo()
 {
-    cout << "szResourceDir = " << SpeechRecognizer::szResourceDir << endl;
+    cout << "szResourceDir = " << SpeechRecognizer::szResourceDir.c_str() << endl;
 }
 

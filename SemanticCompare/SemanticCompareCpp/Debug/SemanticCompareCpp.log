@@ -1,3 +1,9 @@
-﻿  SpeechRecognizer.cpp
+﻿  stdafx.cpp
+d:\repository_git\semanticcompare\semanticcompare\semanticcomparecpp\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\repository_git\semanticcompare\semanticcompare\semanticcomparecpp\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\repository_git\semanticcompare\semanticcompare\semanticcomparecpp\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  SpeechRecognizer.cpp
+  SemanticCompareCpp.cpp
+  正在生成代码...
   SemanticCompareCpp.vcxproj -> D:\repository_git\SemanticCompare\SemanticCompare\Debug\SemanticCompareCpp.exe
   SemanticCompareCpp.vcxproj -> D:\repository_git\SemanticCompare\SemanticCompare\Debug\SemanticCompareCpp.pdb (Partial PDB)
