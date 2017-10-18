@@ -1,5 +1,8 @@
-﻿  SpeechRecognizer.cpp
-  SemanticCompareCpp.cpp
-  正在生成代码...
-  SemanticCompareCpp.vcxproj -> D:\repository_git\SemanticCompare\SemanticCompare\Debug\SemanticCompareCpp.exe
-  SemanticCompareCpp.vcxproj -> D:\repository_git\SemanticCompare\SemanticCompare\Debug\SemanticCompareCpp.pdb (Partial PDB)
+﻿  SemanticCompareCpp.cpp
+d:\repository_git\semanticcompare\semanticcompare\semanticcomparecpp\semanticcomparecpp.cpp(24): error C2664: “void std::vector<char *,std::allocator<_Ty>>::push_back(_Ty &&)”: 无法将参数 1 从“char (*)[400]”转换为“char *const &”
+          with
+          [
+              _Ty=char *
+          ]
+  d:\repository_git\semanticcompare\semanticcompare\semanticcomparecpp\semanticcomparecpp.cpp(24): note: 原因如下: 无法从“char (*)[400]”转换为“char *const ”
+  d:\repository_git\semanticcompare\semanticcompare\semanticcomparecpp\semanticcomparecpp.cpp(24): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换

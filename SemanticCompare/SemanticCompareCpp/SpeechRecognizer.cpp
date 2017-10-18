@@ -30,7 +30,7 @@ void SpeechRecognizer::init()
     errId = ISSSRCreateEx(&srHandle, ISS_SR_ACOUS_LANG_VALUE_MANDARIN, szResourceDir.c_str(), &onMsgProc, NULL);
     cout << "ISSSRCreateEx, error id = " << errId << endl;
 
-    errId = ISSSRStart(srHandle, ISS_SR_SCENE_ALL, ISS_SR_MODE_CLOUD_REC, NULL);
+    errId = ISSSRStart(srHandle, ISS_SR_SCENE_ALL, ISS_SR_MODE_LOCAL_REC, NULL);
     cout << "ISSSRStart, error id = " << errId << endl;
 
     cout << "Initiation finish" << endl;
@@ -48,6 +48,6 @@ void SpeechRecognizer::startRecognise(std::string text)
     cout << "startRecognise..." << endl;
     result = ISSSRMspSearch(srHandle, text.c_str(), NULL, &errId);
     cout << "ISSSRMspSearch, errId = " << errId << endl;
-    cout << "result = " << *result << endl;
+    cout << "result = " << result << endl;
 }
 
